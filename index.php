@@ -18,7 +18,7 @@
 
         .content
         {
-            width:450px;
+            width:100%;
             margin-left:auto;
             margin-right:auto;
         }
@@ -27,7 +27,7 @@
             width:90%;
             border:1px white solid;
             float:clear;
-            height:275px;
+            height:300px;
             width:100%;
         }
         #pOne

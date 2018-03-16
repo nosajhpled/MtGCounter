@@ -2,22 +2,23 @@
 <html>
 <head>
     <title></title>
+    <meta name="viewport" content="width=device-width">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script type="text/javascript">
-    
+
     </script>
     <style>
-        
-        body 
+
+        body
         {
             background-color: black;
             color: white;
             position:relative;
         }
-       
+
         .content
         {
-            width:315px;
+            width:450px;
             margin-left:auto;
             margin-right:auto;
         }
@@ -37,12 +38,12 @@
             -o-transform: scale(-1, -1);
             -ms-transform: scale(-1, -1);
             transform: scale(-1, -1);
-           
+
         }
         #pTwo
         {
             background: blue;
-            
+
         }
         .updown, .counter
         {
@@ -67,7 +68,7 @@
         }
 
     </style>
-    
+
 </head>
 <body>
     <div ng-app="mtgCounter" ng-controller="mtgCtrl" class="content">

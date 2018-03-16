@@ -4,6 +4,7 @@
     <title></title>
     <meta name="viewport" content="width=device-width">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="NoSleep.min.js"></script>
     <script type="text/javascript">
 
     </script>
@@ -89,17 +90,26 @@
 </body>
 
 <script>
+var noSleep = new NoSleep();
+noSleep.enable(); // keep the screen on!
 var app = angular.module('mtgCounter', []);
 
 app.controller('mtgCtrl', function($scope) {
-    $scope.pOneCouter = 20;
-    $scope.pTwoCouter = 20;
 
-    $scope.ResetCounter = function()
+     $scope.ResetCounter = function()
     {
-        $scope.pOneCouter = 20;
-        $scope.pTwoCouter = 20;
+      $scope.pOneCouter = 20;
+      $scope.pTwoCouter = 20;
     }
+
+    $scope.Rnd = function()
+    {
+      return Math.floor((Math.random()*20+1));
+    }
+
+    $scope.ResetCounter();
+
+
 });
 </script>
 </html>

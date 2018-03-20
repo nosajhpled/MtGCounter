@@ -58,3 +58,9 @@ body
     text-align:center;
     padding-top:25%;
 }
+
+video
+{
+  width: 400px;
+  height: 400px;
+}

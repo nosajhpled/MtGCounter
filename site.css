@@ -25,18 +25,10 @@ body
 #pOne
 {
     background-color: red;
-    -moz-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -ms-transform: scale(-1, -1);
-    transform: scale(-1, -1);
+
 
 }
-#pTwo
-{
-    background-color: blue;
 
-}
 .updown, .counter
 {
     float:left;
@@ -57,10 +49,4 @@ body
     font-size:100px;
     text-align:center;
     padding-top:25%;
-}
-
-video
-{
-  width: 400px;
-  height: 400px;
 }

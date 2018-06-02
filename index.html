@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MtG Life Counter</title>
+    <meta name="viewport" content="width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="site.min.css">
+
+</head>
+<body>
+<div ng-app="mtgCounter" ng-controller="mtgCtrl" class="content">
+        <div class="player" name="pOne" id="pOne">
+            <div ng-click="pOneCouter = pOneCouter - 1" class="updown">&darr;</div>
+            <div class="counter">{{ pOneCouter }}</div>
+            <div ng-click="pOneCouter = pOneCouter + 1" class="updown">&uarr;</div>
+        </div>
+
+        <div class="player" name="pReset" id="pReset">
+            <div name="reset" id="reset" ng-click="ResetCounter()"><span>Reset</span></div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+
+var app = angular.module('mtgCounter', []);
+
+app.controller('mtgCtrl', function($scope) {
+
+     $scope.ResetCounter = function()
+    {
+      $scope.pOneCouter = 20;
+
+    }
+
+    $scope.Rnd = function()
+    {
+      return Math.floor((Math.random()*20+1));
+    }
+
+    $scope.ResetCounter();
+
+
+});
+</script>
+</html>
